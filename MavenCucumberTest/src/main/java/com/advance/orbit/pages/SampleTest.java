@@ -9,6 +9,7 @@ public class SampleTest
 	
 	public void getUrl()
 	{
+		//this method will call in Test.java file
 		orbitDriver.get("https://www.phptravels.net/");
 		System.out.println("Title of the Page is : "+orbitDriver.getTitle());
 	}
