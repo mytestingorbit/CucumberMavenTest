@@ -10,7 +10,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions
 (
 		features ="src/test/resources/Features",
-		glue="com.advance.orbit.stepdefinition"
+		glue="com.advance.orbit.stepdefinition",
+		format = {"json:target/cucumber.json",
+		"html:target/site/cucumber-pretty"},
+		monochrome =true
 		)
 
 
