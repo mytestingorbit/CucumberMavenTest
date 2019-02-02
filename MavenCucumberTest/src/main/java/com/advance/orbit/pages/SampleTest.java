@@ -3,19 +3,16 @@ package com.advance.orbit.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SampleTest 
-{
+public class SampleTest {
 	WebDriver orbitDriver = new ChromeDriver();
-	
-	public void getUrl()
-	{
-		//this method will call in Test.java file
+
+	public void getUrl() {
+		// this method will call in Test.java file
 		orbitDriver.get("https://www.phptravels.net/");
-		System.out.println("Title of the Page is : "+orbitDriver.getTitle());
+		System.out.println("Title of the Page is : " + orbitDriver.getTitle());
 	}
-	
-	public void quit()
-	{
+
+	public void quit() {
 		orbitDriver.quit();
 	}
 }
